@@ -5,6 +5,8 @@
 1. Gör en React-app som har tre sidor med en meny. Det ska också finnas en 404-sida som visas ifall man
 skriver in en url som inte matchas mot någon av dina "routes".
 
+Installera React router med `npm install react-router-dom --save`
+
 2. Lägg till React Router på något av dina tidigare projekt exempelvis FN-uppgiften.
 
 Träna Git: http://try.github.io/
