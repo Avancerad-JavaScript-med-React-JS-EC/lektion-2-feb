@@ -15,6 +15,7 @@ Träna Git: http://try.github.io/
 
 ## Videos
 Kortare tutorial: https://www.youtube.com/watch?v=aZGzwEjZrXc
+
 Längre tutorial: https://www.youtube.com/watch?v=Law7wfdg_ls
 
 ## Artiklar
@@ -27,7 +28,7 @@ Tutorial: https://www.freecodecamp.org/news/react-router-in-5-minutes/
 
 Förmiddag: https://academediase.sharepoint.com/:v:/s/Frontend20Helsingborg/EeAcJaZgyOhMhHl5ma56RFYBEcEQWEwFDtKv4gJBeyB27w?e=60Vsjj
 
-Eftermiddag: 
+Eftermiddag: https://academediase.sharepoint.com/:v:/s/Frontend20Helsingborg/EQ8TUeeuaVFJqP56-aM5FrEB14UGKDzUaxvvcdHypaDd7A?e=8pEH6Z
 
 ## Tidigare lektioner
 
