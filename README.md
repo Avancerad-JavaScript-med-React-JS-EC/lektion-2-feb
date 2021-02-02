@@ -1,4 +1,4 @@
-# Lektion 28 januari
+# Lektion 2 februari
 
 ## Övningar
 
@@ -12,7 +12,8 @@ Installera React router med `npm install react-router-dom --save`
 Träna Git: http://try.github.io/
 
 ## Videos
-
+Kortare tutorial: https://www.youtube.com/watch?v=aZGzwEjZrXc
+Längre tutorial: https://www.youtube.com/watch?v=Law7wfdg_ls
 
 ## Artiklar
 
