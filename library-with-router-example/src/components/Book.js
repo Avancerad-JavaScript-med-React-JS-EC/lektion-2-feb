@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-function Book({ book, moreInfo }) {
+function Book({ book }) {
+    const history = useHistory();
+
     return (
-        <article class="book" onClick={() => moreInfo(book)} style={{ backgroundColor : book.color }}>
+        <article class="book" onClick={() => history.push(`/info/${book.id}`) } style={{ backgroundColor : book.color }}>
             <section class="bg"></section>
             <section class="content">
                 <aside></aside>

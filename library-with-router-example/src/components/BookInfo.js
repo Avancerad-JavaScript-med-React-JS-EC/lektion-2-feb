@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import books from '../assets/childrensbooks.json';
+import { useHistory } from 'react-router-dom';
 
-function BookInfo({ book, close }) {
+/**
+ * 1. Hämta id från url:en exempelvis localhost:3000/info/1 
+ * 2. Läs in childrensbooks.json
+ * 3. Filtera ut den bok som motsvarar det ID som finns i url:en
+ * 4. Visa detaljerad info om bok
+ */
+
+
+function BookInfo() {
+    //Hämtar ut vad som finns i url:en efter /info det som i App.js är :id
+    const { id } = useParams();
+    const history = useHistory();
+    const [book , setBook] = useState({});
+    console.log('useParams: ', id);
+
+    useEffect(() => {
+        console.log('Books ', books);
+        //Filtera ut den bok som motsvarar det ID som finns i url:en
+        const foundBook = books.filter((bookObj) => {
+            return bookObj.id === parseInt(id);
+        });
+
+        console.log(foundBook);
+        setBook(foundBook[0]);
+    }, [])
+
     return (
         <main class="background-dark">
             <div class="book-info">
                 <header>
-                    <a href="#" class="back" onClick={ () => close('') }>&#8592;</a>
+                    <a href="#" class="back" onClick={ () => history.push('/') }>&#8592;</a>
                 </header>
                 <section class="display">
                     <article class="book" style={{ backgroundColor: book.color }}>
