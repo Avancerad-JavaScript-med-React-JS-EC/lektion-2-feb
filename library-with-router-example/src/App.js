@@ -1,30 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import booksFromAssets from './assets/childrensbooks.json';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-import Book from './components/Book';
-import BookInfo from './components/BookInfo';
+import Books from './components/Books';
+
+/**
+ * Ny arkitektur med React Router
+ * App.js - Router med Switch som håller koll på våra routes
+ * Books.js - Route med path="/". Loopar ut alla böcker från childrensbooks.json
+ * Book.js - Visar en upp bok som loopas ut från Books.js
+ * BookInfo.js - Route med path="/info". Visar detaljerad information om vald bok
+ */
+
+/**
+ * Problem att lösa
+ * Hur får vi den valda boken från Book.js till BookInfo.js
+ */
 
 function App() {
-  const [currentBook, setCurrentBook] = useState('');
-  const [books, setBooks] = useState([]);
-
-  useEffect(() => {
-    setBooks(booksFromAssets);
-  }, [])
 
   return (
-    <section class="library">
-        <div class="wrapper">
-            { currentBook ? <BookInfo book={ currentBook } close={ setCurrentBook } /> :  
-                <main class="books">
-                    { books.map((book, index) => {
-                        return <Book book={ book } moreInfo={ setCurrentBook } key={ index } />
-                    })}
-                </main>
-            }
-        </div>
-    </section>
+    <Switch>
+      <Route path="/" component={ Books } />
+    </Switch>
   );
 }
 
