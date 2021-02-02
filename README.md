@@ -9,6 +9,8 @@ Installera React router med `npm install react-router-dom --save`
 
 2. Lägg till React Router på något av dina tidigare projekt exempelvis FN-uppgiften.
 
+3. https://gist.github.com/zocom-christoffer-wallenberg/6f38a719c59bde68959303dadae6b9f6
+
 Träna Git: http://try.github.io/
 
 ## Videos
